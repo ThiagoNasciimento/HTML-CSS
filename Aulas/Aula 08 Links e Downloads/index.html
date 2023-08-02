@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com Links</title>
+  </head>
+  <body>
+    <h1>Usando links externos</h1>
+    <p>
+      Voce pode acessar o Repositorio publico do <a href="https://github.com/gustavoguanabara">Guanabara no GitHub</a>
+    </p> <!--Usa-se a tag A, para referenciar um site e deixar-lo clicavel-->
+    <p>
+      Pode-se acessar o <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="externos" >canal gratuitamente no Youtube</a> <!--Usa-se as tag target="_blank" e rel="externos para que o link abra em uma nova aba e nao feche o site atual -->
+    </p> 
+    <h1>Usando links internos</h1>
+    <p>
+      Esta é a primeira pagina do site, Se voce quiser, pode acessar também a
+      minha <a href="pag02.html" rel="next">segunda pagina.</a> <!-- Usa-se o rel, para fazer um index das paginas para o mecanismo de buscas como o google-->
+    </p>
+    <p>Voce também pode acessar nossa <a href="Noticias/pag03.html" target="_self">pagina de notícias</a> <!--Usar o self para quando o link for do proprio site-->
+    </p>
+    <h1>Links para Downloads</h1>
+    <ul>
+      <li>
+        <a href="Curriculos/CURRICULOThiago.pdf">Baixar Curriculo em PDF</a> <!--Caso o navegador nao reconheça como um download, usar o download="CURRICULOThiago.pdf" type="aplication/pdf"-->
+      </li>
+      <li>
+        <a href="Curriculos/CURRICULOThiago.zip">Baixar curriculo compactado em ZIP</a>
+      </li>
+    </ul>
+  </body>
+</html>

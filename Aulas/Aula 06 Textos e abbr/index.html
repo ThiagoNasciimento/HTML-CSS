@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formato de Textos</title>
+    <style>
+      mark {
+        background-color: aqua;
+      }
+    </style>
+    <!-- para definir um estilo de marcação padrão com CSS dentro de um HTML-->
+  </head>
+  <body>
+    <h1>Texto marcado</h1>
+    <p>
+      Podemos criar tambem <mark>um texto marcado</mark> usando a tag MARK. e
+      para usar junto ao CSS,
+      <mark style="background-color: aquamarine">adiciona-se o style.</mark>
+    </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>
+      Estamos criando um <big>texto grande</big> e um
+      <small>texto pequeno</small> nesse paragrafo.
+    </p>
+    <h2>Texto deletado</h2>
+    <p>
+      Podemos marcar um <del>texto como excluido</del> para indicar que ele deve
+      ser lido, mas não deletado
+    </p>
+    <h2>Texto inserido</h2>
+    <p>
+      Podemos marcar <ins>um texto como inserido</ins> para dar uma enfase e
+      indicar que ele foi adicionado depois.
+    </p>
+    <p>Existe tambem o com a tag U(não semantico) para <u>sublinhar</u></p>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <h2>Outras Formatações</h2>
+
+    <p><strong>Código-fonte</strong></p>
+    <p>
+      O comando <code>document.getElementById('teste')</code> é inscrito em
+      liguagem JavaScript.
+    </p>
+    <!-- A tag code, tambem chamada de Fonte Monoespaçada -->
+    <pre> <!-- A tag pre, serve para considerar as quebras de linhas do codigo-->
+                <code>
+                  num= int(input('Digite um numero'))
+                      if num % 2 == 0:
+                  print(f'0 numero {num} é PAR)
+                  elste:
+                     print(f'0 numero {num} é IMPAR)
+                  print('Fim do programa')
+                </code>
+            </pre>
+    <p>
+      Da uma descrição para a palavra ou sigla, exemplo :
+      <abbr title="Hypertext Markup Language">CSS</abbr> e
+      <abbr title="HyperText Markup Language"
+        ><abbr title="Cascating Style Sheets">HTML</abbr></abbr
+      >
+    </p>
+    <!--cria um pequeno POP-UP para a palavra-->
+  </body>
+</html>

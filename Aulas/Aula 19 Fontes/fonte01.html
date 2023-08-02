@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body { 
+            font-family:arial, Helvetica, sans-serif;
+    /*
+        Para tamanho de fontes sempre usar
+        Medidas absolutas usar : px
+        Medidas Relativas usar : em
+        16px geralmente = 1em
+        preferencia de usar em, para compatibilidade em varias telas.
+        */
+            font-size: 1em;
+            font-weight: normal; /*weight= é o peso da fonte:pode ser usado tambem de 100 a 900 ou light para leve e bold para negrito*/
+            font-style: none;
+            text-decoration: none; /* usar underline para sublinhar*/
+        /* width= largura, height= altura*/
+        }
+        h1{
+            /*
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-weight: bolder;
+           font-size: 3em;
+           font-style: italic;
+          
+           Forma resumida/shorthand font
+           - font-style -> font-weight -> font-size -> font-family
+           */
+           font:italic bolder 3em georgia;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque est inventore maxime cum quia beatae enim voluptatibus necessitatibus provident a repudiandae quidem deleniti voluptas voluptatum unde, nam soluta tenetur alias?
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, veritatis nesciunt magnam neque dolorum error commodi, vero laudantium ad ducimus, voluptatum quo sed debitis laborum consequatur consectetur corporis? Ipsam, corporis?</p>
+    </p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ut, omnis beatae itaque mollitia alias laborum ipsum, qui facilis, quae veritatis nemo. Deleniti itaque perspiciatis praesentium tempore culpa dolorum molestias.</p>
+</body>
+</html>

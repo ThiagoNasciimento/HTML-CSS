@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS é # (só pode usar um elemento)
+    em HTML é calss = em CSS é . ( pode vários elementos)
+*/
+body{
+    background-color: rgb(102, 230, 187);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(20, 199, 14);
+}
+h1#principal{
+ text-align: center;
+ background-color: green;
+}
+h2{
+    color: rgb(10, 112, 41);
+}
+/*
+#principal{
+    text-align: center;
+}
+ Pode ser usado somente o id*/
+
+ .basico{
+    color: green;
+ }
+ .intermediario{
+    color: rgb(100, 128, 0);
+ }
+ .avançado{
+    color: rgb(128, 0, 0);
+ }
+ .destaque{
+    background-color: rgb(235, 235, 26);
+ }
