@@ -4,6 +4,24 @@
     font-family: 'idroid';
     src: url(fontes/idroid.otf);
 }
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+*/
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+}
+
+body{
+    background-color: var(--cor0);
+}
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -32,10 +50,14 @@ header>nav{
 header>nav>a{
     text-decoration: none;
     color:white;
-    padding-left: 30px;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
 }
-
-
+header>nav>a:hover{
+   background-color: green;
+    border-radius: 5px;
+    transition: .2s;
+}
 h1#Android {
     font-family: idroid, Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -52,7 +74,7 @@ main {
 
 h2 {
     font-family: idroid, Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgba(127, 255, 212, 0.658),rgb(255, 255, 255));
+    background-image: linear-gradient(to right, rgb(127, 255, 212, 0.658),rgb(255, 255, 255));
     color:rgb(21, 134, 97);
 }
 
@@ -65,6 +87,7 @@ div {
 span.cor{
     color: rgb(15, 131, 92);
     font-weight: bolder;
+    background-color:rgb(127, 255, 212, 0.658);
 }
 
 section#extra {
