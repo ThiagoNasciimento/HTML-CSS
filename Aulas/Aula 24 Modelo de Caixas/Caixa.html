@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+
+            /* usar display: inline; (se quiser converter um box-level em inline ou vice versa) */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color:darkslategray;
+
+            border: 10px solid darkslategray; /*Forma resumida*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Padding é o preenchimento da caixa*/
+
+            padding: 10px; /*Forma resumida do padding, se todos os valores forem igual, só informar um valor*/
+            
+
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            margin: 10px 20px 40px 20px; /*Forma resumida*/
+
+            /* margin: 10px auto 40px auto; , podendo ser utilizado o valor junto com o auto tambem.*/
+
+            outline: 5px;
+            outline-style: dashed;
+            outline-color: rgb(255, 0, 0); /* Fora do box-level, mas dentro da margin*/
+
+            /* margin:auto;  para centralizar a box*/
+
+        }  /*Caixa em tipo box level */
+        a{
+            border-width: 2px;
+            border-style: dashed;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        } /*Caixa em tipo box-inline level */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="">links são exemplo de caixas inline-level.</a>
+    </p>
+    <img src="img/box level e inline level.png" alt="" width="400">
+    <img src="img/tipos de caixas.png" alt="" width="400" height="240">
+    <img src="img/border-padding.png" alt="" width="400" >
+    <img src="img/Altura e largura.png" alt="" width="400" height="166">
+</body>
+</html>
