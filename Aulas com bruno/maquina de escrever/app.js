@@ -1,5 +1,5 @@
 new TypeIt("#companionMethods", {
-    speed: 50,
+    speed: 70,
     waitUntilVisible: true,
   })
   .type("Olá, ")
@@ -8,31 +8,27 @@ new TypeIt("#companionMethods", {
   .delete(1)
   .type("o")
   .move(null, { to: "END" })
-  .type(" Thiago Nacimenot")
-  .move(-7)
+  .type(" Thiago Nacimen")
+  .move(-5)
   .pause(300)
   .type("s")
   .move(null, { to: "END" })
-  .type("too")
-//   .type(" e estou aprendendo")
-//   .move(-4)
-//   .type("o")
-//   .move(null, { to: "END" })
-//   .type("h of today.")
-//   .pause(500)
-//   .break({ delay: 500 })
-//   .break({ delay: 500 })
-//   .type("<em>- Will Rogers</em>")
+  .type("to")
+  .type(" e estou aprendendo ")
+  .move(null, { to: "END" })
+  .type("HTML")
+  .pause(500)
+  .break({ delay: 500 })
+  .delete(5)
+  .type("CSS")
+  .exec(async () => {
+    await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        return resolve();
+      }, 1000);
+    });
+  })
+  .delete(3)
+  .pause(300)
+  .type("JavaScript.")
   .go();
-
-
-
-
-//   .type("Olá, meu nome é ", { delay: 100 }) // Digitação inicial
-// .type("Thiago Nascimento", { delay: 150 }) // Digitação do nome
-// .delete(10) // Exclusão de "Nascimento"
-// .type("Silva", { delay: 100 }) // Digitação de "Silva"
-// .move(null, { to: "END" }) // Move o cursor para o final
-// .type(", e estou aprendendo HTML, CSS e Javascript") // Digitação final
-// .pause(500) // Pausa após a digitação
-// .go(); // Executa a animação
