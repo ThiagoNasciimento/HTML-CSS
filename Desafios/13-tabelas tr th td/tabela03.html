@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody tr:nth-child(2n){  /*Efeito zebrado nth-child(numero ou odd/even)( de 2 em 2 faz uma) */
+            background-color: lightgray;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold; /*Força da fonte/negrito*/
+            padding: 2px;
+            background-color: lightgray;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /*cabecalho-fixo-em-tabelas-grandes 1*/
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead{
+            background-color:gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;  /*cabecalho-fixo-em-tabelas-grandes 2*/
+            top: -1px; /*cabecalho-fixo-em-tabelas-grandes 3*/
+            background-color: #383838;
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                 TR, TD, TH
+            TBODY
+                 TR, TD, TH
+            TFOOT
+                 TR, TD, TH
+    -->
+    <table>
+        <caption>Polulação de alguns estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th>Estado</th> <!--Titulo-->
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td><!--Dados-->
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                 <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr> 
+        </tbody>
+                <tr>
+                <td>São Paulo</td><!--Dados-->
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                 <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr> 
+            <tr>
+                <td>São Paulo</td><!--Dados-->
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                 <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr> 
+        </tbody>
+                <tr>
+                <td>São Paulo</td><!--Dados-->
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                 <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr> 
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>110.659.804</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi ea ad optio dignissimos nam, rerum, possimus libero ipsum molestias est, quia facilis minima dolorum dolore dicta quo cupiditate magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, obcaecati aliquam ratione odit, iusto perspiciatis doloremque commodi nostrum nihil alias error, voluptatibus iure quas? Fugit, in! Quae debitis doloribus vitae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nobis, sunt esse at quod obcaecati, voluptate impedit facere facilis placeat ut corporis. Iure adipisci culpa sapiente porro, saepe delectus assumenda!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi ea ad optio dignissimos nam, rerum, possimus libero ipsum molestias est, quia facilis minima dolorum dolore dicta quo cupiditate magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, obcaecati aliquam ratione odit, iusto perspiciatis doloremque commodi nostrum nihil alias error, voluptatibus iure quas? Fugit, in! Quae debitis doloribus vitae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nobis, sunt esse at quod obcaecati, voluptate impedit facere facilis placeat ut corporis. Iure adipisci culpa sapiente porro, saepe delectus assumenda!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi ea ad optio dignissimos nam, rerum, possimus libero ipsum molestias est, quia facilis minima dolorum dolore dicta quo cupiditate magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, obcaecati aliquam ratione odit, iusto perspiciatis doloremque commodi nostrum nihil alias error, voluptatibus iure quas? Fugit, in! Quae debitis doloribus vitae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nobis, sunt esse at quod obcaecati, voluptate impedit facere facilis placeat ut corporis. Iure adipisci culpa sapiente porro, saepe delectus assumenda!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi ea ad optio dignissimos nam, rerum, possimus libero ipsum molestias est, quia facilis minima dolorum dolore dicta quo cupiditate magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, obcaecati aliquam ratione odit, iusto perspiciatis doloremque commodi nostrum nihil alias error, voluptatibus iure quas? Fugit, in! Quae debitis doloribus vitae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nobis, sunt esse at quod obcaecati, voluptate impedit facere facilis placeat ut corporis. Iure adipisci culpa sapiente porro, saepe delectus assumenda!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi ea ad optio dignissimos nam, rerum, possimus libero ipsum molestias est, quia facilis minima dolorum dolore dicta quo cupiditate magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, obcaecati aliquam ratione odit, iusto perspiciatis doloremque commodi nostrum nihil alias error, voluptatibus iure quas? Fugit, in! Quae debitis doloribus vitae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nobis, sunt esse at quod obcaecati, voluptate impedit facere facilis placeat ut corporis. Iure adipisci culpa sapiente porro, saepe delectus assumenda!</p>
+</body>
+</html>
