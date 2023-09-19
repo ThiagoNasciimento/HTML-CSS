@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--autocomplete off, para desligar a sugestão do campo, pode se utilizar dentro do imput para informar o timpo de campo de sugestão-->
+        <p>
+            <label for="iusuario">Usuario: </label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" placeholder="Nome do Usuario" autocomplete="username"> <!--USAR O REQUIRED PARA CAMPO OBRIGATÓRIOS, minlength para o minimo de caracterer e maxlength para o tamanho maximo-->
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="10" placeholder="Senha" autocomplete="current-password"> <!--Usar o size para mostrar a quantidade de letras(tamanho da caixa), usar placeholder para mostrar um texto no fundo da caixa-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> <!--Enviar dados-->
+            <input type="reset" value="Limpar"> <!--Limpar dados-->
+        </p>
+    </form>
+</body>
+</html>
