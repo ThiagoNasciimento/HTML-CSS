@@ -9,7 +9,8 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <div onclick="clickmenu()" class="burguer"><img id="burguer" src="icons/list.svg" alt="" srcset=""></div>
+        <menu id="itens" class="menuzinho">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -27,5 +28,17 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam natus laudantium voluptates, dignissimos quaerat assumenda pariatur aliquid nam cupiditate architecto corrupti fuga eligendi minus amet, ducimus, laborum velit deserunt molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quas vitae, labore architecto qui hic rerum consequatur. Rem doloribus, sed voluptatem accusantium delectus amet eligendi nam accusamus. Veniam, tenetur necessitatibus!</p>
         </article>
     </main>
+    <script>
+      function clickmenu() {
+        if (itens.style.display == 'block') {  //Se itens for igual a block(se o menu estiver exibido)
+            itens.style.display = 'none' // ele esconde itens(none) menu
+        } else { //senão(se ja estiver sendo exibido)
+            itens.style.display = 'block' //ele exibe o menu
+        }
+
+
+    // itens.style.display = (itens.style.display === 'block') ? 'none' : 'block';    mesma coisa só que com COD menor
+}
+    </script>
 </body>
 </html>
